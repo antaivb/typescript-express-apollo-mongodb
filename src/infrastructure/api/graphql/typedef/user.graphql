@@ -1,0 +1,12 @@
+# Types
+type User {
+    id: String!
+    firstname: String!
+    email: String!
+}
+
+# Inputs
+input UserCreateInput {
+    firstname: String!
+    email: String!
+}

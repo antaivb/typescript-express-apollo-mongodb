@@ -1,0 +1,12 @@
+# Custom Scalars
+scalar Date
+
+type Query {
+    # User
+    user(id: String, email: String): User!
+}
+
+type Mutation {
+    # User
+    createUser(user: UserCreateInput!): User!
+}
