@@ -5,18 +5,18 @@ const getUserHandler = (
     userRepository: userRepositoryInterface
 ) => async (query: getUserQuery) => {
 
-  let user = null
-  if (query.email) {
-    user = await userRepository.findOne('email', query.email)
-  } else if(query.id) {
-    user = await userRepository.findById(query.id)
-  }
+    let user = null
+    if (query.email) {
+        user = await userRepository.findOne('email', query.email)
+    } else if (query.id) {
+        user = await userRepository.findById(query.id)
+    }
 
-  if (!user) {
-    throw new Error('User not found.')
-  }
+    if (!user) {
+        throw new Error('User not found.')
+    }
 
-  return user.serialize()
+    return user.serialize()
 }
 
 export default getUserHandler

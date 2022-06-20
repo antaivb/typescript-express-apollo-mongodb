@@ -1,4 +1,4 @@
-import { connect, set, connection } from 'mongoose'
+import {connect, connection, set} from 'mongoose'
 import {config} from "../../config/environment"
 
 const connectDB = async () => {

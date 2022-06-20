@@ -3,7 +3,7 @@ import registerHandler from "../../../../../application/command/user/registerHan
 import {userRepository} from "../../../../repository/userRepository"
 
 const userMutation = {
-    createUser: async (_: any, { user: input }: any) => {
+    createUser: async (_: any, {user: input}: any) => {
         const registerCommand: registerCommand = {
             email: input.email,
             firstname: input.firstname

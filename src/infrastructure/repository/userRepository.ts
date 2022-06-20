@@ -4,7 +4,7 @@ import {userRepositoryInterface} from "../../domain/repository/userRepositoryInt
 import User from "../../domain/model/user";
 
 export class userRepository extends baseRepository implements userRepositoryInterface {
-  constructor() {
-    super(UserModel, User);
-  }
+    constructor() {
+        super(UserModel, User);
+    }
 }
